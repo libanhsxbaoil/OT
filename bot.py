@@ -30,7 +30,7 @@ async def total_hours(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"⏱ Tổng giờ làm thêm của bạn: {total:.2f} giờ.")
 
 def main():
-    TOKEN = os.getenv("8392831775:AAFlhAmruPXjsJHA1WE-3_cGJI0i1hp1Y9s")
+    TOKEN = os.getenv("BOT_TOKEN")
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
